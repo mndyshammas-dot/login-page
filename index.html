@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form action="auth.php" method="POST">
+                <input type="hidden" name="action" value="login">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p class="toggle-text">Don't have an account? <a href="#" onclick="toggleForm()">Register here</a></p>
+            </form>
+        </div>
+
+        <div class="form-container hidden" id="register-form">
+            <h2>Register</h2>
+            <form action="auth.php" method="POST">
+                <input type="hidden" name="action" value="register">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit">Register</button>
+                <p class="toggle-text">Already have an account? <a href="#" onclick="toggleForm()">Login here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
