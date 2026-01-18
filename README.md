@@ -53,11 +53,12 @@ This project is a simple web application featuring a Login and Registration syst
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login_page.png)
+![Login Page](https://github.com/mndyshammas-dot/login-page/blob/472c680e93fd1083850827e700f35fa565fc375c/Screenshot%202026-01-18%20174424.png)
 
 ### Registered Users (SQLite Database View)
 ![User Database](screenshots/users_database.png)
 ## Security Note
 
 Currently, **password hashing is disabled**. Passwords are stored in plain text. For production environments, it is highly recommended to re-enable `password_hash()` in `auth.php`.
+
 
