@@ -50,6 +50,14 @@ This project is a simple web application featuring a Login and Registration syst
 *   `view_users.php`: Utility script to display database records.
 *   `database.db`: The SQLite database file (generated automatically).
 
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login_page.png)
+
+### Registered Users (SQLite Database View)
+![User Database](screenshots/users_database.png)
 ## Security Note
 
 Currently, **password hashing is disabled**. Passwords are stored in plain text. For production environments, it is highly recommended to re-enable `password_hash()` in `auth.php`.
+
